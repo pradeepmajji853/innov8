@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Cart styles go here */
+        .cart-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .cart-header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .product-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .product-info img {
+            max-width: 60px;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-details h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .product-details p {
+            margin: 5px 0;
+            color: #777;
+        }
+
+        .product-quantity {
+            display: flex;
+            align-items: center;
+        }
+
+        .quantity-input {
+            width: 30px;
+            text-align: center;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        .remove-btn {
+            color: #ff5555;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+
+        .cart-total {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .checkout-btn {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cart-container">
+        <div class="cart-header">
+            <h2>Your Shopping Cart</h2>
+        </div>
+
+        <!-- Cart items go here -->
+        <div class="cart-item">
+            <div class="product-info">
+                <img src="iphone15.png" alt="iphone 15">
+                <div class="product-details">
+                    <h3>iphone 15</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="product-quantity">
+                <input type="number" class="quantity-input" value="1">
+                <span class="remove-btn">&#10006;</span>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <div class="product-info">
+                <img src="MacBookPro.png" alt="MacBookPro">
+                <div class="product-details">
+                    <h3>Mac Book Pro</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="product-quantity">
+                <input type="number" class="quantity-input" value="1">
+                <span class="remove-btn">&#10006;</span>
+            </div>
+        </div>
+        <!-- Add more cart items as needed -->
+
+        <div class="cart-total">
+            <p>Total: $150.00</p>
+        </div>
+
+        <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+    </div>
+
+    <script>
+        function checkout() {
+            alert("Redirecting to checkout page...");
+            // Add additional logic for redirection or processing the checkout
+        }
+    </script>
+</body>
+
+</html>
